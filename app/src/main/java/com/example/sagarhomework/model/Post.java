@@ -1,13 +1,15 @@
-package com.example.sagarhomework.models;
+package com.example.sagarhomework.model;
 
 import android.os.Parcel;
 import android.os.Parcelable;
 
+import com.squareup.moshi.Json;
+
 public class Post implements Parcelable{
-    private int mIntUserId;
-    private int mIntPostId;
-    private String mStringTitle;
-    private String mStringBody;
+    @Json(name = "userId") private int mIntUserId;
+    @Json(name = "id") private int mIntPostId;
+    @Json(name = "title") private String mStringTitle;
+    @Json(name = "body") private String mStringBody;
 
     public Post(int pIntUserId, int pIntPostId, String pStringTitle, String pStringBody) {
         mIntUserId = pIntUserId;

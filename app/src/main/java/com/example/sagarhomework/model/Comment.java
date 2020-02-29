@@ -1,12 +1,14 @@
-package com.example.sagarhomework.models;
+package com.example.sagarhomework.model;
+
+import com.squareup.moshi.Json;
 
 public class Comment {
 
-    private int mIntPostId;
-    private int mIntId;
-    private String mStringName;
-    private String mStringEmail;
-    private String mStringBody;
+    @Json(name = "postId") private int mIntPostId;
+    @Json(name = "id") private int mIntId;
+    @Json(name = "name") private String mStringName;
+    @Json(name = "email") private String mStringEmail;
+    @Json(name = "body") private String mStringBody;
 
     public Comment(int mIntPostId, int mIntId, String mStringName, String mStringEmail, String mStringBody) {
         this.mIntPostId = mIntPostId;

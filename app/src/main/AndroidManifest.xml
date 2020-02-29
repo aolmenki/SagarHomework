@@ -24,5 +24,6 @@
                 android:value=".activity.PostsActivity" />
         </activity>
     </application>
+    <uses-permission android:name="android.permission.INTERNET"/>
 
 </manifest>

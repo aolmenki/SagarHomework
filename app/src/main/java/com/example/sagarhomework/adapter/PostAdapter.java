@@ -9,7 +9,7 @@ import android.widget.TextView;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.sagarhomework.R;
-import com.example.sagarhomework.models.Post;
+import com.example.sagarhomework.model.Post;
 
 public class PostAdapter extends RecyclerView.Adapter<PostAdapter.PostAdapterViewHolder> {
     private Post[] mPostArray;

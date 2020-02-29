@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="wrap_content">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -10,21 +10,28 @@
 
         <TextView
             android:layout_height="wrap_content"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:id="@+id/tv_post_title"
-            android:layout_gravity="start"/>
+            android:layout_weight="1"
+            android:textSize="20sp"
+            android:layout_marginStart="10dp"/>
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:textAlignment="textEnd"
             android:id="@+id/tv_post_user"
-            android:layout_gravity="end"/>
+            android:layout_gravity="end"
+            android:textSize="15sp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="10dp"/>
 
         </LinearLayout>
 
     <TextView
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/tv_post_body"/>
+        android:id="@+id/tv_post_body"
+        android:textSize="10sp"/>
 
 </LinearLayout>

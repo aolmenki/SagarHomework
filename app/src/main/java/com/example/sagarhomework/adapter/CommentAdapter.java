@@ -9,7 +9,7 @@ import android.widget.TextView;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.sagarhomework.R;
-import com.example.sagarhomework.models.Comment;
+import com.example.sagarhomework.model.Comment;
 
 public class CommentAdapter extends RecyclerView.Adapter<CommentAdapter.CommentAdapterViewHolder> {
 
